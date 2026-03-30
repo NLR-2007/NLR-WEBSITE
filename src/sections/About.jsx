@@ -71,7 +71,7 @@ const About = () => {
                       "NLR was established with a clear purpose—to build meaningful solutions that address real problems faced by people in everyday life."
                     </p>
                     <div className="flex flex-col">
-                        <span className="font-bold text-slate-900">Dr. NLR Founder</span>
+                        <span className="font-bold text-slate-900">Nimma Lokesh Reddy</span>
                         <span className="text-slate-500 text-xs font-semibold">Founder & CEO, NLR Group of Company</span>
                     </div>
                 </div>
