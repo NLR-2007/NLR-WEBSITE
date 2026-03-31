@@ -1,0 +1,232 @@
+[
+  {
+    "keywords": ["hi", "hello", "namaste", "hey", "hlo", "hi there", "greetings"],
+    "answer_en": "🌾 Hello! I am Kisaan Krushi, your AI farming assistant. How can I help you today? 🌱",
+    "answer_te": "🌾 నమస్తే! నేను కిసాన్ కృషి, మీ వ్యవసాయ సహాయకారిని. నేను మీకు ఎలా సహాయపడగలను? 🌱"
+  },
+  {
+    "keywords": ["thanks", "thank you", "dhanyavadalu", "super", "good", "ok", "helpful", "great"],
+    "answer_en": "You're welcome! 🙏 Let me know if you need any other farming advice. 🚜",
+    "answer_te": "ధన్యవాదాలు! 🙏 మీకు మరింత వ్యవసాయ సలహా కావాలంటే దయచేసి అడగండి. 🚜"
+  },
+  {
+    "keywords": ["who are you", "what are you", "what is your name", "who developed you", "who made you", "creator", "dev"],
+    "answer_en": "🤖 I am Kisaan Krushi, an intelligent assistant designed to help farmers. I was proudly developed by the **NLR GROUP OF COMPANY (Next Level Revolution)**. 🚀",
+    "answer_te": "🤖 నేను కిసాన్ కృషిని, వ్యవసాయదారులకు సహాయపడటానికి రూపొందించబడిన తెలివైన సహాయకుడిని. నన్ను **NLR గ్రూప్ ఆఫ్ కంపెనీ (నెక్స్ట్ లెవెల్ రివల్యూషన్)** అభివృద్ధి చేసింది. 🚀"
+  },
+  {
+    "keywords": ["what is kisaan krushi", "about app", "what is this", "kisaan krushi"],
+    "answer_en": "📱 Kisaan Krushi is an advanced farming assistant that helps farmers detect crop diseases 🦠 and provides solutions easily via WhatsApp. ✅",
+    "answer_te": "📱 కిసాన్ కృషి అనేది రైతులకు పంట వ్యాధులను గుర్తించి 🦠 వాట్సాప్ ద్వారా సులభంగా పరిష్కారాలు చెప్పే అద్భుతమైన వ్యవస్థ. ✅"
+  },
+  {
+    "keywords": ["how it works", "how to use", "working", "how does it work"],
+    "answer_en": "📸 Simply send a photo of your problematic crop or type your question. I will analyze it 🔍 and provide a solution instantly. 💡",
+    "answer_te": "📸 మీరు కీటకాలు పట్టిన లేదా వ్యాధి సోకిన పంట ఫోటోను పంపండి లేదా సమస్యను టైప్ చేయండి. నేను వెంటనే విశ్లేషించి 🔍 పరిష్కారాన్ని అందిస్తాను. 💡"
+  },
+  {
+    "keywords": ["disease", "crop problem", "leaf problem", "plant issue", "sick plant"],
+    "answer_en": "🥀 Please type the specific disease name or send a clear photo 📷 of the affected crop leaf so I can identify the issue.",
+    "answer_te": "🥀 దయచేసి వ్యాధి పేరును టైప్ చేయండి లేదా వ్యాధి సోకిన పంట ఆకు యొక్క స్పష్టమైన ఫోటోను పంపండి 📷, తద్వారా నేను సమస్యను గుర్తిస్తాను."
+  },
+  {
+    "keywords": ["services", "features", "what you provide", "what do you do"],
+    "answer_en": "🛠️ I provide instant disease detection 🦠, farming advice 🌾, weather alerts 🌦️, market price updates 📈, and farmer support. 📞",
+    "answer_te": "🛠️ నేను తక్షణ వ్యాధి గుర్తింపు 🦠, వ్యవసాయ సలహాలు 🌾, వాతావరణ హెచ్చరికలు 🌦️, మార్కెట్ ధరల అప్‌డేట్స్ 📈 మరియు రైతు మద్దతును అందిస్తాను. 📞"
+  },
+  {
+    "keywords": ["price", "cost", "fee", "free", "money", "subscription"],
+    "answer_en": "🆓 Using Kisaan Krushi is completely FREE for all farmers. We are here to support you at zero cost! 💸",
+    "answer_te": "🆓 రైతులందరికీ కిసాన్ కృషిని ఉపయోగించడం పూర్తిగా ఉచితం వ్యవసాయదారులందరికీ ఉచితం. ఇందుకు ఎటువంటి రుసుము లేదు! 💸"
+  },
+  {
+    "keywords": ["market", "market rate", "mandi price", "selling price", "crop price"],
+    "answer_en": "🏪 To check current market prices for your crop, please check the 'Market' section 📊 in our mobile app or specify your district and crop here.",
+    "answer_te": "🏪 ప్రస్తుత మార్కెట్ ధరలను తెలుసుకోవడానికి దయచేసి మా మొబైల్ యాప్‌లోని 'మార్కెట్' విభాగాన్ని 📊 తనిఖీ చేయండి లేదా ఇక్కడ మీ జిల్లా మరియు పంటను పేర్కొనండి."
+  },
+  {
+    "keywords": ["weather", "rain", "forecast", "climate", "storm"],
+    "answer_en": "🌦️ Please check your local weather app or Kisaan Krushi mobile app for detailed pin-code level weather forecasts before spraying chemicals. 🚜",
+    "answer_te": "🌦️ మందులు పిచికారీ చేయడానికి ముందు స్థానిక వాతావరణాన్ని తనిఖీ చేయండి. స్పష్టమైన వాతావరణం కోసం కిసాన్ కృషి యాప్ చూడండి. 🚜"
+  },
+  {
+    "keywords": ["contact", "help", "support", "call", "customer care", "phone number"],
+    "answer_en": "📞 You can reach our farming experts via our official website nlrgroupofcompany.in 🌐 or call our support number at 6302245307. 👳‍♂️",
+    "answer_te": "📞 మీరు మా వ్యవసాయ నిపుణులను మా అధికారిక వెబ్‌సైట్ nlrgroupofcompany.in 🌐 ద్వారా సంప్రదించవచ్చు లేదా మా సపోర్ట్ నంబర్ 6302245307 కి కాల్ చేయవచ్చు. 👳‍♂️"
+  },
+  {
+    "keywords": ["tomato leaf curl", "tomato curl", "leaf curling"],
+    "answer_en": "🍅 Tomato Leaf Curl is usually caused by Whiteflies 🪰. Spray Imidacloprid (0.5ml/L) or Neem Oil 🌿 (5ml/L) to control the vectors. Remove severely infected plants.",
+    "answer_te": "🍅 టొమాటో ఆకు ముడత సాధారణంగా తెల్ల దోమ 🪰 వల్ల వస్తుంది. ఇమిడాక్లోప్రిడ్ (0.5 మి.లీ/లీ) లేదా వేప నూనె 🌿 (5 మి.లీ/లీ) పిచికారీ చేయండి. "
+  },
+  {
+    "keywords": ["tomato early blight", "tomato spots", "black spots tomato"],
+    "answer_en": "🍅 For Tomato Early Blight (black spots with yellow halos), spray Mancozeb or Chlorothalonil every 7-10 days 💦. Ensure good air circulation.",
+    "answer_te": "🍅 టొమాటోలో ఎర్లీ బ్లైట్ (నల్ల మచ్చలు) నివారణకు ప్రతి 7-10 రోజులకు మాంకోజెబ్ లేదా క్లోరోథలోనిల్ పిచికారీ చేయండి 💦. సరైన గాలి ఆడేలా చూసుకోండి."
+  },
+  {
+    "keywords": ["paddy blast", "rice blast", "rice spots", "paddy disease"],
+    "answer_en": "🌾 For Paddy Blast, avoid excessive Nitrogen fertilizer. Spray Tricyclazole 75% WP at 120 grams per acre as soon as symptoms appear 🛡️.",
+    "answer_te": "🌾 వరి అగ్గి తెగులు నివారణకు నత్రజని ఎరువుల వాడకాన్ని తగ్గించండి. ఎకరాకు 120 గ్రాముల ట్రైసైక్లాజోల్ 75% WP పిచికారీ చేయండి 🛡️."
+  },
+  {
+    "keywords": ["paddy stem borer", "rice borer", "white ear"],
+    "answer_en": "🌾 For Stem Borer (White earheads) in Paddy, apply Cartap Hydrochloride 4G granules (7-10 kg/acre) in standing water 💧.",
+    "answer_te": "🌾 వరిలో కాండం తొలుచు పురుగు (తెల్ల కంకి) నివారణ కోసం నిలకడ నీటిలో ఎకరాకు 7-10 కిలోల కార్టాప్ హైడ్రోక్లోరైడ్ 4G గ్రాన్యూల్స్ వేయండి 💧."
+  },
+  {
+    "keywords": ["chilli thrips", "chilli leaf curl", "mirchi curl"],
+    "answer_en": "🌶️ Thrips cause upward curling in Chilli leaves. Spray Fipronil 5% SC (2ml/L) or Spinosad 45% SC (0.3ml/L) 💦 to effectively control thrips.",
+    "answer_te": "🌶️ మిరపలో తామర పురుగుల వల్ల ఆకులు పైకి ముడుచుకుంటాయి. నివారణకు ఫిప్రోనిల్ 5% SC (2 మి.లీ/లీ) లేదా స్పినోసాడ్ (0.3 మి.లీ/లీ) పిచికారీ చేయండి 💦."
+  },
+  {
+    "keywords": ["chilli mites", "mirchi downward curl", "broad mites"],
+    "answer_en": "🌶️ Mites cause downward curling of leaves in chilli. Spray Spiromesifen 22.9% SC (1ml/L) or Abamectin (1ml/L) ensuring coverage under the leaves 🍃.",
+    "answer_te": "🌶️ మిరపలో నల్లి వల్ల ఆకులు కిందికి ముడుచుకుంటాయి. స్పిరోమెసిఫెన్ (1 మి.లీ/లీ) లేదా అబామెక్టిన్ ఆకుల కింది భాగం తడిసేలా పిచికారీ చేయండి 🍃."
+  },
+  {
+    "keywords": ["cotton bollworm", "pink bollworm", "cotton pest"],
+    "answer_en": "☁️ For Pink Bollworm in Cotton, install pheromone traps (5/acre) 🪤 to monitor. If severe, spray Emamectin Benzoate 5% SG (0.5g/L) 💦.",
+    "answer_te": "☁️ పత్తిలో గులాబీ రంగు కాయ తొలిచే పురుగు నివారణకు, ఫెరోమోన్ ఉచ్చులు వాడండి 🪤. ఉధృతి ఉంటే ఎమామెక్టిన్ బెంజోయేట్ 5% SG (0.5 గ్రా/లీ) పిచికారీ చేయండి 💦."
+  },
+  {
+    "keywords": ["cotton whitefly", "cotton bugs"],
+    "answer_en": "☁️ For Whiteflies in Cotton, use yellow sticky traps 🟨. For chemical control, spray Diafenthiuron 50% WP (1g-1.25g/L) properly on all leaf surfaces.",
+    "answer_te": "☁️ పత్తిలో తెల్ల దోమ నివారణకు పసుపు రంగు జిగురు అట్టలు వాడండి 🟨. మందు కోసం డయాఫెన్థియురాన్ 50% WP (1 గ్రా/లీ) పిచికారీ చేయండి."
+  },
+  {
+    "keywords": ["groundnut tikka", "groundnut spots", "peanut spots"],
+    "answer_en": "🥜 For Tikka disease in Groundnut (leaf spots), spray Hexaconazole 5% SC at 2ml/L or Chlorothalonil 2g/L of water 💦.",
+    "answer_te": "🥜 వేరుసెనగలో టిక్కా ఆకుమచ్చ తెగులు కోసం హెక్సాకోనజోల్ 5% SC (2 మి.లీ/లీ) లేదా క్లోరోథలోనిల్ (2 గ్రా/లీ) నీటికి కలిపి పిచికారీ చేయండి 💦."
+  },
+  {
+    "keywords": ["onion thrips", "onion spots", "onion dry"],
+    "answer_en": "🧅 For Thrips in Onion, keep fields weed-free 🌱 and spray Profenofos + Cypermethrin (2ml/L) along with sticking agent.",
+    "answer_te": "🧅 ఉల్లిలో తామర పురుగుల నివారణకు కలుపు లేకుండా చూసుకోండి 🌱, ప్రోఫెనోఫాస్ + సైపర్‌మెత్రిన్ (2 మి.లీ/లీ) జిగురుతో కలిపి పిచికారీ చేయండి."
+  },
+  {
+    "keywords": ["urea", "nitrogen", "when to apply urea"],
+    "answer_en": "🧪 Urea provides Nitrogen for vegetative growth 🌿. Apply it in a split dose: basal at sowing and top-dressing at 30 days and 60 days of crop stage.",
+    "answer_te": "🧪 యూరియా పంట ఎదుగుదలకు తోడ్పడుతుంది 🌿. దీనిని మొదటి దఫా విత్తేటపుడు, రొండో దఫా 30 రోజులకు మరియు 60 రోజులకు వేయాలి."
+  },
+  {
+    "keywords": ["dap", "di ammonium phosphate", "phosphorus"],
+    "answer_en": "🧪 DAP is vital for root development 🌱. Always apply DAP as a basal dose before or at the time of sowing. Top-dressing DAP later is not effective.",
+    "answer_te": "🧪 వేరు వ్యవస్థ అభివృద్ధికి DAP ముఖ్యం 🌱. దీనిని ఎల్లప్పుడూ విత్తే ముందు లేదా విత్తేటప్పుడు వేయాలి. పైపాటుగా వేయడం వల్ల ఉపయోగం లేదు."
+  },
+  {
+    "keywords": ["mop", "potash", "potassium"],
+    "answer_en": "🧪 Muriate of Potash (MOP) improves grain quality 🌾 and disease resistance. Apply half as basal and half during the flowering/grain-filling stage.",
+    "answer_te": "🧪 పొటాష్ పంట నాణ్యత ఆచరణను 🌾 మెరుగు పరుస్తుంది. సగం విత్తేటప్పుడు, మిగతా సగభాగాన్ని పూత దశలో వేయాలి."
+  },
+  {
+    "keywords": ["neem oil", "organic pesticide", "natural pesticide"],
+    "answer_en": "🌿 Neem Oil is an excellent preventive organic pesticide. Use 10,000 PPM Neem Oil at 3-5ml/L of water mixed with liquid soap 🧴, sprayed every 14 days.",
+    "answer_te": "🌿 వేప నూనె ఒక మంచి సేంద్రియ పురుగు మందు. 10000 PPM వేప నూనెను 3-5 మి.లీ లీటరు నీటికి సబ్బు ద్రావణంతో 🧴 కలిపి 14 రోజులకోసారి పిచికారీ చేయండి."
+  },
+  {
+    "keywords": ["weed control", "weeds", "grass problem"],
+    "answer_en": "🌾 For effective weed control, apply pre-emergence herbicides like Pendimethalin within 48 hours of sowing. Cultivate between rows 🚜 to manually remove weeds.",
+    "answer_te": "🌾 కలుపు నివారణకు విత్తిన 48 గంటల్లోగా పెండిమిథాలిన్ గడ్డి మందు కొట్టండి. వరుసల మధ్య అంతరకృషి 🚜 ద్వారా గడ్డిని నివారించండి."
+  },
+  {
+    "keywords": ["irrigation", "watering", "dry plants"],
+    "answer_en": "💧 Water plants during early morning 🌅 or late evening 🌇. Avoid over-watering as waterlogging can cause root rot diseases.",
+    "answer_te": "💧 మొక్కలకు ఉదయం 🌅 లేదా సాయంత్రం 🌇 వేళల్లో నీరు పెట్టండి. ఎక్కువ నీరు పెట్టకండి ఎందుకంటే నీరు నిలిచిపోవడం వల్ల వేరుకుళ్ళు వస్తుంది."
+  },
+  {
+    "keywords": ["soil test", "soil health", "ph"],
+    "answer_en": "🧪 A soil test helps understand the exact nutrients your soil needs. Take soil samples from your field before the monsoon 🌧️ and visit your nearby Krishi Vigyan Kendra.",
+    "answer_te": "🧪 మట్టి పరీక్ష వల్ల సరైన పోషకాలు తెలుస్తాయి. వర్షాకాలం 🌧️ ముందు మట్టి నమూనాలను తీసుకుని, సమీపంలోని వ్యవసాయ విజ్ఞాన కేంద్రాన్ని సందర్శించండి."
+  },
+  {
+    "keywords": ["earthworm", "vermicompost", "organic manure", "manure"],
+    "answer_en": "🪱 Vermicompost greatly enhances soil fertility. Add 2-3 tons of well-decomposed vermicompost per acre during the final ploughing 🚜.",
+    "answer_te": "🪱 వానపాముల ఎరువు మట్టి సారాన్ని అద్భుతంగా పెంచుతుంది. ఎకరాకు 2-3 టన్నుల వానపాముల ఎరువును ఆఖరి దుక్కిలో 🚜 వేయండి."
+  },
+  {
+    "keywords": ["yellow leaves", "pale leaves", "iron deficiency", "zinc deficiency"],
+    "answer_en": "🍂 Yellowing of leaves can occur due to Nitrogen, Iron, or Zinc deficiency. If the newer leaves are yellowing with green veins, spray Iron Sulphate 💦.",
+    "answer_te": "🍂 ఆకులు పసుపు రంగులోకి మారడానికి నత్రజని, ఇనుము లేదా జింక్ లోపాలు కారణం కావచ్చు. లేత ఆకులు పసుపుగా మారితే ఐరన్ సల్ఫేట్ స్ప్రే చేయండి 💦."
+  },
+  {
+    "keywords": ["flower dropping", "flowers falling", "yield loss"],
+    "answer_en": "🥀 Flower dropping can be caused by excessive heat ☀️, incorrect watering 💧, or lack of Boron. Spray Planofix (1ml/4.5L of water) to reduce dropping in vegetable crops.",
+    "answer_te": "🥀 పూత రాలిపోవడానికి అధిక వేడి ☀️, నీటి కొరత 💧, లేదా బోరాన్ లోపం కారణం కావచ్చు. ప్లనోఫిక్స్ (1 మి.లీ/ 4.5 లీ నీటికి) పిచికారీ చేయండి."
+  },
+  {
+    "keywords": ["fruit borer", "worms in fruit", "brinjal borer"],
+    "answer_en": "🐛 For fruit borers (common in Brinjal/Tomato), destroy affected fruits. Spray Indoxacarb 14.5% SC (1ml/L) or Flubendiamide 39.35% SC (0.5ml/L) 💦.",
+    "answer_te": "🐛 పండు తొలిచే పురుగు (వంకాయ/టొమాటో) ఉంటే పాడైన కాయలను నాశనం చేయండి. ఇండాక్సాకార్బ్ (1 మి.లీ/లీ) లేదా ఫ్లూబెండయమైడ్ (0.5 మి.లీ/లీ) కొట్టండి 💦."
+  },
+  {
+    "keywords": ["aphids", "green bugs", "black bugs"],
+    "answer_en": "🪲 Aphids suck sap from plants leading to stunted growth 🌱. Spray Thiamethoxam 25% WG (0.5g/L) or Acetamiprid 20% SP (0.5g/L) 💦.",
+    "answer_te": "🪲 పేను బంక వంటి రసం పీల్చే పురుగుల వలన ఎదుగుదల ఆగిపోతుంది 🌱. థియామెథోక్సామ్ (0.5గ్రా/లీ) లేదా అసిటామిప్రిడ్ (0.5గ్రా/లీ) పిచికారీ చేయండి 💦."
+  },
+  {
+    "keywords": ["powdery mildew", "white powder on leaves", "white fungus"],
+    "answer_en": "❄️ For Powdery Mildew, you will see a white ash-like coating on leaves. Spray Wettable Sulphur (3g/L) or Dinocap (1ml/L) repeatedly 💦.",
+    "answer_te": "❄️ బూడిద తెగులు ఆకులపై బూడిదలాంటి పొరను ఏర్పరుస్తుంది. గంధకం (3గ్రా/లీ) లేదా డైనోకాప్ (1మి.లీ/లీ) పిచికారీ చేయండి 💦."
+  },
+  {
+    "keywords": ["mealybug", "white cotton bug", "cottony pest"],
+    "answer_en": "☁️ Mealybugs look like white cotton masses on the stem. Treat using Neem Oil 🌿 or chemical control like Profenophos 50% EC at 2ml/L.",
+    "answer_te": "☁️ పిండి నల్లి తెల్లని దూదిలా కాండం వద్ద ఉంటుంది. నివారణకు వేప నూనె 🌿 లేదా ప్రోఫెనోఫాస్ 50% EC (2మి.లీ/లీటరు) వాడుకోండి."
+  },
+  {
+    "keywords": ["caterpillar", "leaf eating caterpillar", "holes in leaves"],
+    "answer_en": "🐛 For leaf-eating caterpillars, spray Chlorpyrifos 20% EC (2ml/L) or Emamectin Benzoate 5% SG (0.5g/L) 💦 during late evening 🌇.",
+    "answer_te": "🐛 ఆకు తినే గొంగళి పురుగు నివారణకు గుళికల మందులు లేదా సాయంత్రం వేళల్లో 🌇 క్లోర్‌పైరిఫాస్ 20% EC (2మి.లీ/లీ) పిచికారీ చేయండి 💦."
+  },
+  {
+    "keywords": ["nematodes", "root knot", "swollen roots"],
+    "answer_en": "🪱 Root-knot nematodes cause swellings on roots 🌱. Practice crop rotation with marigold 🌼 or treat soil with Carbofuran 3G granules at 12 kg/acre.",
+    "answer_te": "🪱 వేరు ముడత నిమటోడ్లు వేర్లను ఉబ్బేలా చేస్తాయి 🌱. బంతి పూల పంటను మార్పిడిగా వాడండి 🌼 లేదా కార్బోఫ్యూరాన్ 3G (12 కిలోలు/ఎకరం) భూమిలో వేయండి."
+  },
+  {
+    "keywords": ["seed treatment", "seed processing"],
+    "answer_en": "🌱 Seed treatment protects crops from early soil-borne diseases. Treat seeds with Thiram or Captan (2.5g/Kg seed) or bio-fungicide like Trichoderma Viride 🍄.",
+    "answer_te": "🌱 విత్తన శుద్ధి చీడపీడల నుండి రక్షిస్తుంది. విత్తనాలకు థిరామ్ లేదా కాప్టాన్ (2.5 గ్రా/కిలో) లేదా ట్రైకోడెర్మా విరిడే 🍄 కలిపి ఆరబెట్టి విత్తుకోండి."
+  },
+  {
+    "keywords": ["trichoderma", "bio fungicide", "friend organic"],
+    "answer_en": "🍄 Trichoderma is a friendly fungus that prevents root diseases 🌱. Mix 2kg Trichoderma with 100kg farmyard manure, keep for 1 week, then apply to 1 acre.",
+    "answer_te": "🍄 ట్రైకోడెర్మా వేరు తెగుళ్లను ఆపే మిత్ర సిలీంద్రం 🌱. 2 కిలోలను 100 కిలోల పశువుల ఎరువుతో వారం పాటు కలిపి ఉంచి, ఎకరం పొలంలో వేయండి."
+  },
+  {
+    "keywords": ["grafting", "mango tree", "orchard care"],
+    "answer_en": "🥭 For planting mango orchards, ensure a pit size of 1m cubed filled with topsoil, manure, and SSP. Plant grafted saplings ensuring the joint is above soil 🌱.",
+    "answer_te": "🥭 మామిడి తోటల కోసం 1 మీటరు గోతులు తీసి ఎరువులు ఉంచండి. అంటుకట్టిన మొక్కను పాతేటప్పుడు అంటుభాగం మట్టి పైకి ఉండేలా చూడండి 🌱."
+  },
+  {
+    "keywords": ["sugarcane red rot", "red stem sugarcane", "sugarcane disease"],
+    "answer_en": "🎋 Red Rot is a severe fungal disease in Sugarcane. The best control is planting disease-free sets and practicing a 2-3 year crop rotation 🔄.",
+    "answer_te": "🎋 ఎర్ర కుళ్ళు చెరుకులో ప్రమాదకరమైన సిలీంద్ర వ్యాధి. మంచి ఆరోగ్యవంతమైన విత్తన గడ్డలను వాడటం, 3 ఏళ్లు పంట మార్పిడి చేయడమే పరిష్కారం 🔄."
+  },
+  {
+    "keywords": ["drone spraying", "drone technology", "smart farming"],
+    "answer_en": "🚁 Agricultural drones provide efficient and uniform spraying of pesticides 💦, saving time ⏱️ and water 💧. Check with local KVKs to rent a drone.",
+    "answer_te": "🚁 వ్యవసాయ డ్రోన్స్ మందులను ఖచ్చితంగా మరియు త్వరగా పిచికారీ చేస్తాయి 💦. దీనిద్వారా నీరు 💧, సమయం ⏱️ ఆదా అవుతుంది. స్థానిక KVK లలో అద్దెకు తీసుకోండి."
+  },
+  {
+    "keywords": ["pm kisan", "govt scheme", "subsidy", "loan"],
+    "answer_en": "🏛️ PM-Kisan scheme gives Rs.6000/year 💵 to eligible farmers. Visit the nearest 'Meeseva' or official pmkisan.gov.in portal to check status.",
+    "answer_te": "🏛️ పీఎమ్ కిసాన్ స్కీం కింద రైతులకు ఏటా రూ.6000 అందుతుంది 💵. మొబైల్ ఆపరేటర్ లేదా మీసేవా లేదా అధికారిక pmkisan.gov.in ద్వారా తనిఖీ చేయండి."
+  },
+  {
+    "keywords": ["crop insurance", "faisal bima", "pmfby", "damage claim", "loss"],
+    "answer_en": "📄 Under PMFBY crop insurance, you must report crop loss due to weather 🌧️ within 72 hours via the Crop Insurance App or toll-free number 📞.",
+    "answer_te": "📄 పంట బీమా (PMFBY) కింద వాతావరణం 🌧️ వల్ల నష్టం జరిగితే 72 గంటల్లోగా క్రాప్ ఇన్సూరెన్స్ యాప్ ద్వారా లేదా టోల్-ఫ్రీ నంబర్‌కు 📞 రిపోర్ట్ చేయండి."
+  },
+  {
+    "keywords": ["tractor", "renting machine"],
+    "answer_en": "🚜 Many state governments and private startups offer Custom Hiring Centers (CHCs) to rent tractors and harvesters at cheap rates 💵.",
+    "answer_te": "🚜 మొత్తం వ్యవసాయ యంత్రాలను అద్దెకు తీసుకునేందుకు కస్టమ్ హైరింగ్ సెంటర్లను రాష్ట్ర ప్రభుత్వాలు తక్కువ ధరకు 💵 అందిస్తున్నాయి."
+  },
+  {
+    "keywords": ["bye", "goodbye", "cya", "see you"],
+    "answer_en": "👋 Goodbye! Wishing you a bountiful harvest 🌾. Reach out whenever you need farming assistance. 🧑‍🌾",
+    "answer_te": "👋 వీడ్కోలు! మీకు మంచి దిగుబడి రావాలని కోరుకుంటున్నాను 🌾. వ్యవసాయ అవసరం వస్తే ఎప్పుడైనా మళ్లీ సందేశం పంపండి. 🧑‍🌾"
+  }
+]
