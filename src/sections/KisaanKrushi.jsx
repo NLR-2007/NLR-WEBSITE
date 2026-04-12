@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { HiCamera, HiFilter, HiSearch, HiClipboardList, HiShieldCheck, HiOutlineSupport, HiTrendingUp } from 'react-icons/hi';
+import { HiCamera, HiFilter, HiSearch, HiClipboardList, HiShieldCheck, HiOutlineSupport, HiTrendingUp, HiDownload } from 'react-icons/hi';
 
 const steps = [
   {
@@ -61,9 +61,9 @@ const KisaanKrushi = () => {
               Smart Farming Support Powered by Artificial Intelligence
             </p>
             <p className="text-slate-600 mb-8 leading-relaxed">
-              Kisaan Krushi is an intelligent agriculture platform designed to help farmers 
-              identify crop diseases quickly and take the right action without delay. 
-              It brings advanced technology directly into the hands of farmers in a simple way.
+              Kisaan Krushi brings advanced technology directly into the hands of farmers. 
+              Our newly launched <strong className="text-slate-900">Tomato Disease Detector App</strong> helps identify tomato crop diseases quickly, 
+              providing immediate suggestions for fertilizers, precautions, and actionable treatment steps.
             </p>
 
             <div className="space-y-4 mb-10">
@@ -79,8 +79,11 @@ const KisaanKrushi = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="#contact" className="px-8 py-4 bg-primary-600 text-white rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-primary-700 transition-all shadow-lg shadow-primary-200">
-                Get Kisaan Krushi
+              <a href="https://www.mediafire.com/file/7ts3k2vooh1nkue/Tomato_AI_Detector.apk/file" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-primary-600 text-white rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-primary-700 transition-all shadow-lg shadow-primary-200">
+                <HiDownload className="text-xl" /> Download Tomato App
+              </a>
+              <a href="#contact" className="px-8 py-4 bg-white border border-primary-200 text-primary-700 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-primary-50 transition-all">
+                Contact Support
               </a>
             </div>
           </motion.div>
