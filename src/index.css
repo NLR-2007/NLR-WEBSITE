@@ -14,14 +14,51 @@
   --color-primary-950: #052e16;
 
   --font-sans: "Inter", "system-ui", "sans-serif";
+
+  --color-bg-main: var(--bg-main);
+  --color-bg-card: var(--bg-card);
+  --color-border-main: var(--border-color);
+  --color-text-main: var(--text-main);
+  --color-text-muted: var(--text-muted);
+  --color-brand: var(--brand-accent);
 }
 
 @layer base {
+  :root, [data-theme="dark"] {
+    --bg-main: #060b13;
+    --bg-card: #0a1120;
+    --border-color: #1e293b;
+    --text-main: #e2e8f0;
+    --text-muted: #94a3b8;
+    --brand-accent: #22c55e;
+  }
+
+  [data-theme="light"] {
+    --bg-main: #f8fafc;
+    --bg-card: #ffffff;
+    --border-color: #e2e8f0;
+    --text-main: #0f172a;
+    --text-muted: #475569;
+    --brand-accent: #16a34a;
+  }
+
+  [data-theme="nlr"] {
+    --bg-main: #021a0c;
+    --bg-card: #042f17;
+    --border-color: #059669;
+    --text-main: #ecfdf5;
+    --text-muted: #6ee7b7;
+    --brand-accent: #10b981;
+  }
+
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
   }
   body {
-    @apply text-slate-900 bg-white;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    transition: background-color 0.5s, color 0.5s;
   }
 }
 
@@ -30,40 +67,41 @@
     @apply max-w-7xl mx-auto px-4 md:px-8 lg:px-16 py-16 md:py-24;
   }
   .heading-xl {
-    @apply text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight;
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight transition-colors duration-300;
   }
   .heading-lg {
-    @apply text-3xl md:text-4xl font-bold tracking-tight;
+    @apply text-3xl md:text-4xl font-bold tracking-tight transition-colors duration-300;
   }
   .heading-md {
-    @apply text-2xl md:text-3xl font-bold tracking-tight;
+    @apply text-2xl md:text-3xl font-bold tracking-tight transition-colors duration-300;
   }
 }
 
 .bg-blur {
-  background: rgba(255, 255, 255, 0.75);
+  background: color-mix(in srgb, var(--bg-main) 75%, transparent);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid color-mix(in srgb, var(--border-color) 50%, transparent);
 }
 
 .premium-gradient {
-  background: linear-gradient(135deg, var(--color-primary-50) 0%, #ffffff 100%);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--brand-accent) 10%, transparent) 0%, var(--bg-main) 100%);
 }
 
 .glass-card {
-  background: rgba(255, 255, 255, 0.7);
+  background: color-mix(in srgb, var(--bg-card) 60%, transparent);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 1);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+  border: 1px solid color-mix(in srgb, var(--border-color) 50%, transparent);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
 
 .glass-card:hover {
-  background: rgba(255, 255, 255, 0.9);
+  background: color-mix(in srgb, var(--bg-card) 80%, transparent);
   transform: translateY(-5px);
-  box-shadow: 0 15px 45px 0 rgba(31, 38, 135, 0.1);
+  border: 1px solid var(--brand-accent);
+  box-shadow: 0 15px 45px 0 color-mix(in srgb, var(--brand-accent) 10%, transparent);
 }
 
 .blob-bg {

@@ -37,8 +37,8 @@ const reasons = [
 
 const WhyChoose = () => {
   return (
-    <section id="why-choose" className="bg-white relative overflow-hidden">
-      <div className="blob-bg top-0 right-0 w-[500px] h-[500px] bg-primary-100/50" style={{animationDelay: '1.5s'}}></div>
+    <section id="why-choose" className="bg-bg-main relative overflow-hidden transition-colors duration-500">
+      <div className="blob-bg top-0 right-0 w-[500px] h-[500px] bg-brand/5" style={{animationDelay: '1.5s'}}></div>
       <div className="section-container">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           <motion.div 
@@ -47,20 +47,20 @@ const WhyChoose = () => {
             viewport={{ once: true }}
             className="lg:w-1/3"
           >
-            <h2 className="heading-lg text-slate-900 mb-6">Why Choose NLR?</h2>
-            <p className="text-slate-600 mb-8 leading-relaxed">
+            <h2 className="heading-lg text-text-main mb-6">Why Choose NLR?</h2>
+            <p className="text-text-muted mb-8 leading-relaxed transition-colors duration-300">
               Choosing the right technology partner is critical to achieving meaningful results. 
               At NLR, we focus on delivering solutions that are practical, reliable, and built 
               for real-world use.
             </p>
-            <div className="p-8 rounded-3xl bg-primary-600 text-white shadow-xl shadow-primary-100">
+            <div className="p-8 rounded-3xl bg-brand text-[#060b13] shadow-xl shadow-brand/20 transition-all duration-500">
                 <h3 className="text-2xl font-bold mb-4">Our Commitment</h3>
-                <p className="text-primary-50 text-sm leading-relaxed mb-6">
+                <p className="text-[#060b13]/80 text-sm leading-relaxed mb-6">
                     "We don't just build systems; we create solutions that genuinely improve efficiency, 
                     productivity, and decision-making for everyone."
                 </p>
                 <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full border-2 border-white/20 bg-white/10 flex items-center justify-center">
+                    <div className="w-10 h-10 rounded-full border-2 border-black/20 bg-black/10 flex items-center justify-center">
                         <span className="font-bold text-xs">NLR</span>
                     </div>
                     <span className="font-bold text-sm">Next Level Revolution</span>
@@ -77,13 +77,13 @@ const WhyChoose = () => {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ y: -5 }}
-                className="p-8 rounded-3xl glass-card transition-all duration-300"
+                className="p-8 rounded-3xl glass-card border border-border-main transition-all duration-500 hover:border-brand/40"
               >
-                <div className="w-12 h-12 rounded-2xl bg-primary-100 text-primary-600 flex items-center justify-center text-2xl mb-6">
+                <div className="w-12 h-12 rounded-2xl bg-brand/10 text-brand flex items-center justify-center text-2xl mb-6">
                     {reason.icon}
                 </div>
-                <h3 className="text-lg font-bold text-slate-900 mb-3">{reason.title}</h3>
-                <p className="text-sm text-slate-500 leading-relaxed">{reason.description}</p>
+                <h3 className="text-lg font-bold text-text-main mb-3">{reason.title}</h3>
+                <p className="text-sm text-text-muted leading-relaxed">{reason.description}</p>
               </motion.div>
             ))}
           </div>

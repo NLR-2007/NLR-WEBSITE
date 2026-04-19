@@ -27,73 +27,73 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-slate-900 text-slate-400 pt-20 pb-10 border-t border-slate-800">
+    <footer className="bg-bg-card text-text-muted pt-20 pb-10 border-t border-border-main transition-colors duration-500">
       <div className="section-container">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 lg:col-span-1">
             <div className="flex flex-col mb-6">
-              <h3 className="text-xl font-black text-white tracking-tighter">NLR GROUP OF COMPANY</h3>
-              <span className="text-[10px] font-bold tracking-[0.2em] text-primary-500">ESTB 2023</span>
+              <h3 className="text-xl font-black text-text-main tracking-tighter">NLR GROUP OF COMPANY</h3>
+              <span className="text-[10px] font-bold tracking-[0.2em] text-brand">ESTB 2023</span>
             </div>
-            <p className="text-sm leading-relaxed mb-8 text-slate-400">
+            <p className="text-sm leading-relaxed mb-8 text-text-muted">
               Next Level Revolution in Agriculture & Technology. 
               Solving real-world problems through intelligent digital solutions.
             </p>
-            <div className="flex items-center gap-4 text-white/60">
-              <a href="#" className="hover:text-primary-400 transition-colors"><FaLinkedin size={20} /></a>
-              <a href="#" className="hover:text-primary-400 transition-colors"><FaInstagram size={20} /></a>
-              <a href="#" className="hover:text-primary-400 transition-colors"><FaTwitter size={20} /></a>
-              <a href="#" className="hover:text-primary-400 transition-colors"><FaFacebook size={20} /></a>
+            <div className="flex items-center gap-4 text-text-main/60">
+              <a href="#" className="hover:text-brand transition-colors"><FaLinkedin size={20} /></a>
+              <a href="#" className="hover:text-brand transition-colors"><FaInstagram size={20} /></a>
+              <a href="#" className="hover:text-brand transition-colors"><FaTwitter size={20} /></a>
+              <a href="#" className="hover:text-brand transition-colors"><FaFacebook size={20} /></a>
             </div>
           </div>
 
           <div>
-            <h4 className="text-white font-bold mb-6">Quick Links</h4>
+            <h4 className="text-text-main font-bold mb-6">Quick Links</h4>
             <ul className="space-y-4 text-sm">
-              <li><a href="#home" className="hover:text-white transition-colors">Home</a></li>
-              <li><a href="#about" className="hover:text-white transition-colors">About</a></li>
-              <li><a href="#solutions" className="hover:text-white transition-colors">Solutions</a></li>
-              <li><a href="#kisaan-krushi" className="hover:text-white transition-colors">Kisaan Krushi</a></li>
-              <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
+              <li><a href="#home" className="hover:text-text-main transition-colors">Home</a></li>
+              <li><a href="#about" className="hover:text-text-main transition-colors">About</a></li>
+              <li><a href="#solutions" className="hover:text-text-main transition-colors">Solutions</a></li>
+              <li><a href="#kisaan-krushi" className="hover:text-text-main transition-colors">Kisaan Krushi</a></li>
+              <li><a href="#contact" className="hover:text-text-main transition-colors">Contact</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-white font-bold mb-6">Solutions</h4>
+            <h4 className="text-text-main font-bold mb-6">Solutions</h4>
             <ul className="space-y-4 text-sm">
-              <li><a href="#kisaan-krushi" className="hover:text-white transition-colors">AI Crop Disease</a></li>
-              <li><a href="#solutions" className="hover:text-white transition-colors">Fuel Monitoring</a></li>
-              <li><a href="#solutions" className="hover:text-white transition-colors">Flood Alert</a></li>
-              <li><a href="#solutions" className="hover:text-white transition-colors">Student Retention</a></li>
+              <li><a href="#kisaan-krushi" className="hover:text-text-main transition-colors">AI Crop Disease</a></li>
+              <li><a href="#solutions" className="hover:text-text-main transition-colors">Fuel Monitoring</a></li>
+              <li><a href="#solutions" className="hover:text-text-main transition-colors">Flood Alert</a></li>
+              <li><a href="#solutions" className="hover:text-text-main transition-colors">Student Retention</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-white font-bold mb-6">Subscribe</h4>
-            <p className="text-xs mb-6 leading-relaxed text-slate-500 font-medium">
+            <h4 className="text-text-main font-bold mb-6">Subscribe</h4>
+            <p className="text-xs mb-6 leading-relaxed text-text-muted font-medium">
               Join our newsletter to stay updated with our latest innovations.
             </p>
             <div className="flex gap-2">
               <input 
                 type="email" 
                 placeholder="Email Address" 
-                className="bg-slate-800 border border-slate-700 rounded-lg px-4 py-2 text-xs w-full focus:outline-none focus:border-primary-500"
+                className="bg-bg-main border border-border-main rounded-lg px-4 py-2 text-xs w-full focus:outline-none focus:border-brand"
               />
-              <button className="bg-primary-600 text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-primary-700 transition-all">
+              <button className="bg-brand text-[#060b13] px-4 py-2 rounded-lg text-xs font-bold hover:brightness-110 transition-all">
                 Send
               </button>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div className="border-t border-border-main pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-xs">
             © 2026 NLR Group of Company. All rights reserved.
           </p>
           <div className="flex gap-8 text-xs font-medium">
-            <a href="#" onClick={(e) => openModal(e, 'privacy')} className="hover:text-white transition-colors duration-300">Privacy Policy</a>
-            <a href="#" onClick={(e) => openModal(e, 'terms')} className="hover:text-white transition-colors duration-300">Terms of Service</a>
-            <a href="#" onClick={(e) => openModal(e, 'cookies')} className="hover:text-white transition-colors duration-300">Cookie Settings</a>
+            <a href="#" onClick={(e) => openModal(e, 'privacy')} className="hover:text-text-main transition-colors duration-300">Privacy Policy</a>
+            <a href="#" onClick={(e) => openModal(e, 'terms')} className="hover:text-text-main transition-colors duration-300">Terms of Service</a>
+            <a href="#" onClick={(e) => openModal(e, 'cookies')} className="hover:text-text-main transition-colors duration-300">Cookie Settings</a>
           </div>
         </div>
       </div>
