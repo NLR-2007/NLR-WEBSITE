@@ -56,7 +56,7 @@ const RESPONSES = {
     ],
   },
   pricing: {
-    text: `Flexible, project-based pricing:\n\n•  Landing pages & small sites — from ₹8,000\n•  Full-stack web apps — from ₹25,000\n•  Mobile apps — from ₹35,000\n•  AI/ML projects — custom quotes\n•  SEO + GEO packages — from ₹5,000/mo\n•  Social media — from ₹4,000/mo\n\nFree consultation included. No hidden fees, no lock-in.`,
+    text: `Every project is scoped and priced individually based on your requirements.\n\nWe offer:\n•  Landing pages & small sites\n•  Full-stack web apps\n•  Mobile apps (iOS + Android)\n•  AI/ML solutions\n•  SEO + GEO packages\n•  Social media management\n\nFree consultation included — reach out and we'll give you a custom quote within 24 hours. No hidden fees, no lock-in.`,
     followUp: [
       { label: 'Start a project', key: 'contact', icon: '🚀' },
       { label: 'Our services', key: 'services', icon: '⚡' },
