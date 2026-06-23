@@ -1,94 +1,87 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { HiArrowRight } from 'react-icons/hi';
+import React, { useEffect, useRef, useState } from 'react';
+
+const words = ['found.', 'shipped.', 'cited.', 'ranked.', 'used.'];
 
 const Hero = () => {
+  const [wordIndex, setWordIndex] = useState(0);
+  const [visible, setVisible] = useState(true);
+  const prefersReducedMotion = useRef(false);
+
+  useEffect(() => {
+    prefersReducedMotion.current = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReducedMotion.current) return;
+
+    const interval = setInterval(() => {
+      setVisible(false);
+      setTimeout(() => {
+        setWordIndex((prev) => (prev + 1) % words.length);
+        setVisible(true);
+      }, 180);
+    }, 2400);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-bg-main transition-colors duration-500">
-      {/* Decorative background elements */}
-      <div className="blob-bg top-0 right-0 w-3/4 h-3/4 bg-brand/10 opacity-50 translate-x-1/3 -translate-y-1/3"></div>
-      <div className="blob-bg bottom-0 left-0 w-1/2 h-1/2 bg-brand/5 opacity-60 -translate-x-1/4 translate-y-1/4" style={{animationDelay: '2s'}}></div>
+    <header id="home" className="pt-[90px] pb-[70px] border-b border-line relative overflow-hidden">
+      <div className="wrap">
+        <p className="font-mono text-[0.75rem] tracking-[0.14em] uppercase text-ink-soft flex items-center gap-2.5 mb-[26px]">
+          <span className="w-[34px] h-px bg-saffron inline-block" />
+          NLR Group of Companies · India
+        </p>
 
-      <div className="section-container grid lg:grid-cols-2 gap-12 items-center">
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        >
-          <motion.span
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="inline-block px-4 py-1.5 rounded-full bg-brand/10 border border-brand/30 text-brand text-sm font-bold mb-6 tracking-wide shadow-[0_0_15px_var(--brand-accent)]/20 transition-all"
+        <h1 className="font-display font-extrabold text-[clamp(2.6rem,7vw,5.2rem)] leading-[1.02] tracking-[-0.01em] max-w-[13ch]">
+          We build software that gets{' '}
+          <span
+            className="text-saffron-deep inline-block min-w-[7ch] transition-opacity duration-[180ms]"
+            style={{ opacity: visible ? 1 : 0 }}
           >
-            AI-powered Agriculture & Tech
-          </motion.span>
-          
-          <h1 className="heading-xl text-text-main leading-[1.1] mb-6">
-            Building AI-Powered <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand to-emerald-400">Solutions for Real-World Problems</span>
-          </h1>
-          
-          <p className="text-lg md:text-xl text-text-muted mb-10 max-w-xl leading-relaxed transition-colors duration-300">
-            We specialize in Artificial Intelligence, Web & App Development, and Smart Agriculture Technologies to build practical systems that matter.
-          </p>
+            {words[wordIndex]}
+          </span>
+        </h1>
 
-          <div className="flex flex-col sm:flex-row gap-4">
-            <motion.a
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              href="#services"
-              className="px-8 py-4 bg-brand text-[#060b13] rounded-xl font-bold flex items-center justify-center gap-2 shadow-[0_0_20px_var(--brand-accent)]/20 hover:brightness-110 transition-all"
-            >
-              Explore Services <HiArrowRight size={20} />
-            </motion.a>
-            <motion.a
-              whileHover={{ scale: 1.02, backgroundColor: 'color-mix(in srgb, var(--text-main) 5%, transparent)' }}
-              whileTap={{ scale: 0.98 }}
-              href="#contact"
-              className="px-8 py-4 border-2 border-border-main text-text-main rounded-xl font-bold flex items-center justify-center gap-2 hover:border-brand transition-all"
-            >
-              Contact Us
-            </motion.a>
-          </div>
+        <p className="mt-7 max-w-[54ch] text-ink-soft text-[1.05rem]">
+          Freelance development studio for apps, websites, and machine-learning products — plus
+          the social media, SEO, and GEO optimization to make sure people <em>and</em> AI engines
+          find them. 30+ projects delivered across India and the US in one year.
+        </p>
 
-          <div className="mt-12 flex items-center gap-6 text-sm text-text-muted font-medium transition-colors duration-300">
-            <span className="flex items-center gap-1"><span className="text-brand">✓</span> Multi-domain Innovation</span>
-            <span className="flex items-center gap-1"><span className="text-brand">✓</span> Scalable AI Systems</span>
-          </div>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-          className="relative hidden lg:block"
-        >
-          <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl skew-x-[-2deg] rotate-2 border border-border-main transition-all duration-700">
-            <img 
-              src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=800" 
-              alt="Innovative Tech & Agriculture" 
-              className="w-full h-auto object-cover opacity-80"
-            />
-            <div className="absolute inset-0 bg-gradient-to-tr from-base-main/80 to-transparent mix-blend-overlay"></div>
-          </div>
-          {/* Floating card effect */}
-          <motion.div
-            animate={{ y: [0, -10, 0] }}
-            transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-            className="absolute -bottom-6 -left-6 z-20 p-6 rounded-2xl glass-card max-w-[240px]"
+        <div className="mt-[38px] flex gap-3.5 flex-wrap">
+          <a
+            href="#contact"
+            className="font-mono text-[0.82rem] no-underline px-[26px] py-[13px] border border-ink bg-ink text-paper hover:bg-saffron-deep hover:border-saffron-deep transition-all duration-150"
           >
-            <div className="flex items-center gap-4 mb-3">
-              <div className="w-10 h-10 rounded-xl bg-brand/10 border border-brand/30 flex items-center justify-center text-brand">
-                <span className="font-bold">AI</span>
-              </div>
-              <div className="font-bold text-text-main">Advanced Analytics</div>
+            Start a project
+          </a>
+          <a
+            href="#projects"
+            className="font-mono text-[0.82rem] no-underline px-[26px] py-[13px] border border-ink text-ink hover:bg-ink hover:text-paper transition-all duration-150"
+          >
+            See our work
+          </a>
+        </div>
+
+        <div className="mt-16 flex gap-0 border border-line bg-card flex-wrap" role="list">
+          {[
+            { value: '30+', label: 'Projects in 1 year' },
+            { value: 'India + US', label: 'Clients served' },
+            { value: 'AI-first', label: 'Build philosophy' },
+            { value: 'GEO', label: 'Visible to AI search' },
+          ].map((item, i, arr) => (
+            <div
+              key={item.label}
+              role="listitem"
+              className={`flex-1 min-w-[180px] px-[22px] py-[18px] ${i < arr.length - 1 ? 'border-r border-line' : ''}`}
+            >
+              <b className="font-display text-2xl font-bold block">{item.value}</b>
+              <span className="font-mono text-[0.7rem] tracking-[0.08em] uppercase text-ink-soft">
+                {item.label}
+              </span>
             </div>
-            <p className="text-xs text-text-muted">Processing real-time agricultural data for better decision making.</p>
-          </motion.div>
-        </motion.div>
+          ))}
+        </div>
       </div>
-    </section>
+    </header>
   );
 };
 

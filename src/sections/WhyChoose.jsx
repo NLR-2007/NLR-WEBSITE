@@ -1,92 +1,61 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { HiCheckCircle, HiLightBulb, HiPlusCircle, HiUserGroup, HiTrendingUp, HiSparkles } from 'react-icons/hi';
 
-const reasons = [
+const approaches = [
   {
-    title: 'Problem-First Approach',
-    description: 'We don\'t just build technology; we solve actual ground-level challenges based on real-world data.',
-    icon: <HiLightBulb />,
+    title: 'Build for the AI era',
+    description:
+      'Search is moving from blue links to AI answers. Everything we ship is structured so that both Google and generative engines can read, cite, and recommend it.',
   },
   {
-    title: 'AI + Practical Usage',
-    description: 'Our systems combine advanced artificial intelligence with simple, intuitive interfaces for everyday use.',
-    icon: <HiSparkles />,
+    title: 'Working software, early',
+    description:
+      'You see a running version in the first milestone, not a slide deck. Every project ships in stages you can test yourself.',
   },
   {
-    title: 'Scalable Systems',
-    description: 'Built to grow with your needs, our architectures are robust enough to handle large-scale deployments.',
-    icon: <HiTrendingUp />,
+    title: 'One team, full stack',
+    description:
+      'Design, code, ML, and growth under one roof — no hand-offs between agencies, no "that\'s the other vendor\'s problem."',
   },
   {
-    title: 'Real-World Impact',
-    description: 'Every solution we deliver is measured by the tangible value and efficiency it creates for the end-user.',
-    icon: <HiPlusCircle />,
+    title: 'Problem-first approach',
+    description:
+      'We don\'t just build technology; we solve actual ground-level challenges based on real-world data and direct user feedback.',
   },
   {
-    title: 'User-Friendly Design',
-    description: 'We ensure that complex backend technology is hidden behind a clean and accessible user experience.',
-    icon: <HiUserGroup />,
+    title: 'Scalable systems',
+    description:
+      'Built to grow with your needs, our architectures are robust enough to handle large-scale deployments without compromise.',
   },
   {
-    title: 'Continuous Innovation',
-    description: 'NLR is committed to constant improvement, ensuring our solutions remain at the cutting edge of tech.',
-    icon: <HiCheckCircle />,
+    title: 'Continuous innovation',
+    description:
+      'NLR is committed to constant improvement, ensuring our solutions remain at the cutting edge of technology.',
   },
 ];
 
 const WhyChoose = () => {
   return (
-    <section id="why-choose" className="bg-bg-main relative overflow-hidden transition-colors duration-500">
-      <div className="blob-bg top-0 right-0 w-[500px] h-[500px] bg-brand/5" style={{animationDelay: '1.5s'}}></div>
-      <div className="section-container">
-        <div className="flex flex-col lg:flex-row gap-16 items-center">
-          <motion.div 
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="lg:w-1/3"
-          >
-            <h2 className="heading-lg text-text-main mb-6">Why Choose NLR?</h2>
-            <p className="text-text-muted mb-8 leading-relaxed transition-colors duration-300">
-              Choosing the right technology partner is critical to achieving meaningful results. 
-              At NLR, we focus on delivering solutions that are practical, reliable, and built 
-              for real-world use.
-            </p>
-            <div className="p-8 rounded-3xl bg-brand text-[#060b13] shadow-xl shadow-brand/20 transition-all duration-500">
-                <h3 className="text-2xl font-bold mb-4">Our Commitment</h3>
-                <p className="text-[#060b13]/80 text-sm leading-relaxed mb-6">
-                    "We don't just build systems; we create solutions that genuinely improve efficiency, 
-                    productivity, and decision-making for everyone."
-                </p>
-                <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full border-2 border-black/20 bg-black/10 flex items-center justify-center">
-                        <span className="font-bold text-xs">NLR</span>
-                    </div>
-                    <span className="font-bold text-sm">Next Level Revolution</span>
-                </div>
-            </div>
-          </motion.div>
+    <section id="approach" aria-labelledby="approach-heading" className="py-[88px] border-b border-line">
+      <div className="wrap">
+        <div className="flex justify-between items-end gap-6 mb-[52px] flex-wrap">
+          <h2 id="approach-heading" className="font-display font-bold text-[clamp(1.8rem,4vw,2.6rem)] leading-[1.1]">
+            How we work
+          </h2>
+          <p className="font-mono text-[0.75rem] text-ink-soft max-w-[34ch] text-right max-md:text-left">
+            The part most agencies skip.
+          </p>
+        </div>
 
-          <div className="lg:w-2/3 grid sm:grid-cols-2 gap-6">
-            {reasons.map((reason, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                whileHover={{ y: -5 }}
-                className="p-8 rounded-3xl glass-card border border-border-main transition-all duration-500 hover:border-brand/40"
-              >
-                <div className="w-12 h-12 rounded-2xl bg-brand/10 text-brand flex items-center justify-center text-2xl mb-6">
-                    {reason.icon}
-                </div>
-                <h3 className="text-lg font-bold text-text-main mb-3">{reason.title}</h3>
-                <p className="text-sm text-text-muted leading-relaxed">{reason.description}</p>
-              </motion.div>
-            ))}
-          </div>
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-10">
+          {approaches.map((item) => (
+            <div key={item.title}>
+              <h3 className="font-display text-[1.1rem] font-bold mb-2.5 flex gap-2.5 items-baseline">
+                <span className="text-saffron">→</span>
+                {item.title}
+              </h3>
+              <p className="text-ink-soft text-[0.93rem]">{item.description}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

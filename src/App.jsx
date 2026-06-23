@@ -3,33 +3,34 @@ import Navbar from './components/Navbar';
 import Hero from './sections/Hero';
 import About from './sections/About';
 import Services from './sections/Solutions';
-import WhyChoose from './sections/WhyChoose';
 import Projects from './sections/Projects';
-import KisaanKrushi from './sections/KisaanKrushi';
-import Trust from './sections/Trust';
+import WhyChoose from './sections/WhyChoose';
 import Blog from './sections/Blog';
 import Team from './sections/Team';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
+import ChatBot from './components/ChatBot';
 
 function App() {
   return (
-    <div className="relative font-sans antialiased min-h-screen transition-colors duration-500">
+    <div className="min-h-screen">
+      <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[999] focus:bg-saffron focus:text-white focus:px-4 focus:py-2 focus:font-mono focus:text-sm">
+        Skip to content
+      </a>
       <Navbar />
-      <main>
+      <main id="main-content">
         <Hero />
         <About />
         <Services />
-        <WhyChoose />
         <Projects />
-        <KisaanKrushi />
-        <Trust />
+        <WhyChoose />
         <Blog />
         <Team />
         <Contact />
       </main>
       <Footer />
+      <ChatBot />
       <FloatingWhatsApp />
     </div>
   );

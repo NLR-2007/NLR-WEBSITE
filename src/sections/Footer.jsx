@@ -1,108 +1,144 @@
 import React, { useState } from 'react';
-import { FaLinkedin, FaInstagram, FaTwitter, FaFacebook } from 'react-icons/fa';
 import LegalModal from '../components/LegalModal';
-
 
 const legalContent = {
   privacy: {
     title: 'Privacy Policy',
-    content: 'At NLR Group of Company, we take your privacy seriously.\n\nThis Privacy Policy outlines how we collect, use, and protect your personal data when you interact with our services and platforms. We only collect information necessary to provide and improve our products, such as Kisaan Krushi and our IoT systems.\n\nYour data is encrypted and securely stored, and we do not sell your personal information to third parties.'
+    sections: [
+      {
+        heading: '1. Introduction',
+        body: 'NLR Group of Companies ("NLR Group," "we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, store, and protect your personal information when you visit our website (nlrgroupofcompany.in), use our services, or interact with us through any channel including WhatsApp, email, or phone.\nBy using our website or services, you consent to the practices described in this policy. If you do not agree, please discontinue use of our services.',
+      },
+      {
+        heading: '2. Information We Collect',
+        body: 'We may collect the following types of information:\n• Personal Information: Name, email address, phone number, and any details you voluntarily provide through our contact form or WhatsApp.\n• Usage Data: Pages visited, time spent on pages, browser type, device information, IP address, and referring URLs — collected automatically through standard web analytics.\n• Cookies & Local Storage: We use essential cookies for site functionality and analytics cookies (such as Google Analytics) to understand traffic patterns. No advertising or tracking cookies are used.\n• Project Information: Details about your project requirements, business needs, and technical specifications shared during consultations.',
+      },
+      {
+        heading: '3. How We Use Your Information',
+        body: 'We use the information we collect to:\n• Respond to your inquiries and provide project consultations.\n• Deliver, maintain, and improve our services.\n• Send project updates, invoices, and service-related communications.\n• Analyze website usage to improve user experience and performance.\n• Comply with legal obligations and protect our rights.\nWe do not use your information for unsolicited marketing. We will never send you promotional messages unless you explicitly opt in.',
+      },
+      {
+        heading: '4. Data Sharing & Third Parties',
+        body: 'We do not sell, rent, or trade your personal information to any third party. We may share limited data with:\n• Service Providers: Hosting providers (Vercel/AWS), analytics tools (Google Analytics), and communication tools (WhatsApp Business) that help us operate our services. These providers are bound by their own privacy policies.\n• Legal Requirements: If required by law, court order, or government regulation, we may disclose your information to comply with legal obligations.\nAll third-party services we use are industry-standard and maintain their own data protection practices.',
+      },
+      {
+        heading: '5. Data Security',
+        body: 'We implement appropriate technical and organizational measures to protect your data, including:\n• HTTPS encryption on all pages.\n• Secure hosting infrastructure with regular security updates.\n• Access controls limiting data access to authorized personnel only.\n• No storage of payment information on our servers — all payments are handled through secure third-party processors.\nWhile we take reasonable precautions, no method of transmission over the internet is 100% secure. We cannot guarantee absolute security.',
+      },
+      {
+        heading: '6. Data Retention',
+        body: 'We retain your personal information only for as long as necessary to fulfill the purposes outlined in this policy, unless a longer retention period is required by law. Contact form submissions and project inquiries are retained for up to 24 months. You may request deletion at any time.',
+      },
+      {
+        heading: '7. Your Rights',
+        body: 'You have the right to:\n• Access: Request a copy of the personal data we hold about you.\n• Correction: Request correction of inaccurate or incomplete data.\n• Deletion: Request deletion of your personal data from our systems.\n• Objection: Object to the processing of your data for specific purposes.\nTo exercise any of these rights, contact us at nlrgroupofcompany@gmail.com. We will respond within 30 days.',
+      },
+      {
+        heading: '8. Children\'s Privacy',
+        body: 'Our services are not directed to individuals under the age of 16. We do not knowingly collect personal information from children. If we become aware that we have collected data from a child under 16, we will take steps to delete it promptly.',
+      },
+      {
+        heading: '9. Changes to This Policy',
+        body: 'We may update this Privacy Policy from time to time. Changes will be reflected on this page with an updated "Last updated" date. Continued use of our website or services after changes constitutes acceptance of the revised policy.',
+      },
+      {
+        heading: '10. Contact Us',
+        body: 'If you have questions or concerns about this Privacy Policy, contact us:\n• Email: nlrgroupofcompany@gmail.com\n• Phone: +91 79895 05968\n• WhatsApp: +91 63022 45307\n• Location: India',
+      },
+    ],
   },
   terms: {
     title: 'Terms of Service',
-    content: 'These Terms of Service govern your use of the NLR Group of Company website and our digital solutions.\n\nBy accessing our services, you agree to abide by these terms. Our solutions, including Kisaan Krushi, are provided "as is" without warranties. Users must ensure that images and data uploaded comply with applicable laws.\n\nWe reserve the right to suspend accounts that abuse our platform or violate safety protocols.'
+    sections: [
+      {
+        heading: '1. Acceptance of Terms',
+        body: 'By accessing or using the website and services of NLR Group of Companies ("NLR Group," "we," "us," or "our"), you agree to be bound by these Terms of Service. If you do not agree to these terms, do not use our website or services.\nThese terms apply to all visitors, users, clients, and anyone who accesses or uses our website (nlrgroupofcompany.in) or engages our services.',
+      },
+      {
+        heading: '2. Services Overview',
+        body: 'NLR Group provides the following services on a freelance and project basis:\n• AI & Machine Learning Solutions\n• Web Development & Full-Stack Applications\n• Mobile App Development\n• Agriculture Technology Solutions\n• Social Media Management, SEO & GEO Optimization\nThe scope, timeline, deliverables, and pricing for each project are agreed upon individually through written communication (email, WhatsApp, or formal proposal) before work begins.',
+      },
+      {
+        heading: '3. Project Engagement & Payments',
+        body: 'All projects begin only after mutual agreement on scope and terms. Key conditions:\n• Quotations are valid for 15 days from the date of issue unless stated otherwise.\n• A minimum advance payment (typically 30–50% of the project cost) is required before development begins.\n• Final payment is due upon project completion and before handover of source code, deployment access, or final deliverables.\n• Payment methods and schedules are communicated per project.\n• Prices quoted are exclusive of applicable taxes unless explicitly stated.',
+      },
+      {
+        heading: '4. Intellectual Property',
+        body: 'Unless otherwise agreed in writing:\n• All source code, designs, and deliverables created for a client project become the client\'s property upon full payment.\n• NLR Group retains the right to use anonymized project descriptions and screenshots in our portfolio and marketing materials.\n• Pre-existing tools, libraries, frameworks, and open-source components used in your project remain under their respective licenses.\n• You must not resell, redistribute, or sublicense our work as a template or product to third parties without written permission.',
+      },
+      {
+        heading: '5. Client Responsibilities',
+        body: 'To ensure successful project delivery, clients are responsible for:\n• Providing accurate, complete, and timely information, content, and assets required for the project.\n• Reviewing and providing feedback on deliverables within agreed timelines.\n• Ensuring that all content, images, and data provided to us do not infringe on third-party intellectual property rights or violate applicable laws.\n• Maintaining the confidentiality of any credentials, API keys, or access provided during the project.\nDelays caused by late client input may result in adjusted timelines.',
+      },
+      {
+        heading: '6. Revisions & Scope Changes',
+        body: 'Each project includes a reasonable number of revisions as agreed in the project scope. Additional revisions or scope changes beyond the original agreement may incur additional charges, which will be communicated and agreed upon before work proceeds.\nMajor scope changes may require a revised proposal with updated timelines and pricing.',
+      },
+      {
+        heading: '7. Warranties & Disclaimers',
+        body: 'We strive to deliver high-quality work, but:\n• Our services and website are provided "as is" without warranties of any kind, express or implied.\n• We do not guarantee specific results such as search rankings, traffic numbers, revenue increases, or app store approval.\n• We are not liable for any issues arising from third-party services, APIs, hosting providers, or platforms used in your project.\n• We warrant that deliverables will be free from known defects at the time of handover. Bug fixes for issues attributable to our work are provided free of charge for 30 days after project completion.',
+      },
+      {
+        heading: '8. Limitation of Liability',
+        body: 'To the maximum extent permitted by law, NLR Group shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, business, or goodwill.\nOur total liability for any claim arising from our services shall not exceed the total amount paid by you for the specific project giving rise to the claim.',
+      },
+      {
+        heading: '9. Termination',
+        body: 'Either party may terminate a project engagement with written notice:\n• If the client terminates after work has begun, payment is due for all work completed up to the termination date.\n• If NLR Group terminates, we will deliver all completed work and refund any payment for undelivered portions.\n• We reserve the right to terminate or refuse service to anyone who violates these terms, engages in abusive behavior, or requests work that is illegal or unethical.',
+      },
+      {
+        heading: '10. Confidentiality',
+        body: 'Both parties agree to keep confidential any proprietary information, business strategies, technical details, or trade secrets shared during the engagement. This obligation survives the termination of the project.\nNLR Group will never share your project details, credentials, or business information with third parties without your explicit written consent.',
+      },
+      {
+        heading: '11. Website Usage',
+        body: 'When using our website, you agree not to:\n• Attempt to gain unauthorized access to any part of the website or its systems.\n• Use automated tools to scrape, crawl, or extract data from the website beyond what is permitted in our robots.txt.\n• Upload or transmit malicious code, viruses, or harmful content.\n• Use the website for any unlawful purpose or in violation of any applicable laws.',
+      },
+      {
+        heading: '12. Governing Law',
+        body: 'These Terms of Service are governed by and construed in accordance with the laws of India. Any disputes arising from these terms or our services shall be subject to the exclusive jurisdiction of the courts in India.',
+      },
+      {
+        heading: '13. Changes to These Terms',
+        body: 'We reserve the right to modify these Terms of Service at any time. Changes take effect immediately upon being posted on this page. Continued use of our website or services after any changes constitutes acceptance of the revised terms.',
+      },
+      {
+        heading: '14. Contact Us',
+        body: 'For questions about these Terms of Service, contact us:\n• Email: nlrgroupofcompany@gmail.com\n• Phone: +91 79895 05968\n• WhatsApp: +91 63022 45307\n• Website: nlrgroupofcompany.in',
+      },
+    ],
   },
-  cookies: {
-    title: 'Cookie Settings',
-    content: 'We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic.\n\nEssential cookies are required for basic site functionality, while analytics cookies help us understand how you interact with our website to improve our services.\n\nBy continuing to use our website, you consent to our use of essential cookies. You can manage your preferences through your browser settings.'
-  }
 };
 
 const Footer = () => {
   const [activeModal, setActiveModal] = useState(null);
 
-  const openModal = (e, type) => {
-    e.preventDefault();
-    setActiveModal(type);
-  };
-
   return (
-    <footer className="bg-bg-card text-text-muted pt-20 pb-10 border-t border-border-main transition-colors duration-500">
-      <div className="section-container">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-          <div className="col-span-1 lg:col-span-1">
-            <div className="flex flex-col mb-6">
-              <h3 className="text-xl font-black text-text-main tracking-tighter">NLR GROUP OF COMPANY</h3>
-              <span className="text-[10px] font-bold tracking-[0.2em] text-brand">ESTB 2023</span>
-            </div>
-            <p className="text-sm leading-relaxed mb-8 text-text-muted">
-              Next Level Revolution in Agriculture & Technology. 
-              Solving real-world problems through intelligent digital solutions.
-            </p>
-            <div className="flex items-center gap-4 text-text-main/60">
-              <a href="#" className="hover:text-brand transition-colors"><FaLinkedin size={20} /></a>
-              <a href="#" className="hover:text-brand transition-colors"><FaInstagram size={20} /></a>
-              <a href="#" className="hover:text-brand transition-colors"><FaTwitter size={20} /></a>
-              <a href="#" className="hover:text-brand transition-colors"><FaFacebook size={20} /></a>
-            </div>
-          </div>
-
-          <div>
-            <h4 className="text-text-main font-bold mb-6">Quick Links</h4>
-            <ul className="space-y-4 text-sm">
-              <li><a href="#home" className="hover:text-text-main transition-colors">Home</a></li>
-              <li><a href="#about" className="hover:text-text-main transition-colors">About</a></li>
-              <li><a href="#solutions" className="hover:text-text-main transition-colors">Solutions</a></li>
-              <li><a href="#kisaan-krushi" className="hover:text-text-main transition-colors">Kisaan Krushi</a></li>
-              <li><a href="#contact" className="hover:text-text-main transition-colors">Contact</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-text-main font-bold mb-6">Solutions</h4>
-            <ul className="space-y-4 text-sm">
-              <li><a href="#kisaan-krushi" className="hover:text-text-main transition-colors">AI Crop Disease</a></li>
-              <li><a href="#solutions" className="hover:text-text-main transition-colors">Fuel Monitoring</a></li>
-              <li><a href="#solutions" className="hover:text-text-main transition-colors">Flood Alert</a></li>
-              <li><a href="#solutions" className="hover:text-text-main transition-colors">Student Retention</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-text-main font-bold mb-6">Subscribe</h4>
-            <p className="text-xs mb-6 leading-relaxed text-text-muted font-medium">
-              Join our newsletter to stay updated with our latest innovations.
-            </p>
-            <div className="flex gap-2">
-              <input 
-                type="email" 
-                placeholder="Email Address" 
-                className="bg-bg-main border border-border-main rounded-lg px-4 py-2 text-xs w-full focus:outline-none focus:border-brand"
-              />
-              <button className="bg-brand text-[#060b13] px-4 py-2 rounded-lg text-xs font-bold hover:brightness-110 transition-all">
-                Send
-              </button>
-            </div>
-          </div>
+    <footer aria-label="Site footer" className="py-9 border-t border-line">
+      <div className="wrap flex justify-between gap-5 flex-wrap font-mono text-[0.72rem] text-ink-soft items-center">
+        <span>© 2026 NLR Group of Companies</span>
+        <div className="flex gap-6">
+          <button
+            onClick={() => setActiveModal('privacy')}
+            className="bg-transparent border-none text-ink-soft hover:text-ink cursor-pointer font-mono text-[0.72rem] p-0 transition-colors"
+          >
+            Privacy Policy
+          </button>
+          <button
+            onClick={() => setActiveModal('terms')}
+            className="bg-transparent border-none text-ink-soft hover:text-ink cursor-pointer font-mono text-[0.72rem] p-0 transition-colors"
+          >
+            Terms of Service
+          </button>
         </div>
-
-        <div className="border-t border-border-main pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-xs">
-            © 2026 NLR Group of Company. All rights reserved.
-          </p>
-          <div className="flex gap-8 text-xs font-medium">
-            <a href="#" onClick={(e) => openModal(e, 'privacy')} className="hover:text-text-main transition-colors duration-300">Privacy Policy</a>
-            <a href="#" onClick={(e) => openModal(e, 'terms')} className="hover:text-text-main transition-colors duration-300">Terms of Service</a>
-            <a href="#" onClick={(e) => openModal(e, 'cookies')} className="hover:text-text-main transition-colors duration-300">Cookie Settings</a>
-          </div>
-        </div>
+        <span className="italic">"Today's Decision Tomorrow's Future"</span>
       </div>
 
-      <LegalModal 
+      <LegalModal
         isOpen={activeModal !== null}
         onClose={() => setActiveModal(null)}
         title={activeModal ? legalContent[activeModal].title : ''}
-        content={activeModal ? legalContent[activeModal].content : ''}
+        sections={activeModal ? legalContent[activeModal].sections : []}
       />
     </footer>
   );

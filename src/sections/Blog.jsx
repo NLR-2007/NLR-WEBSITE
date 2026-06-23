@@ -1,124 +1,80 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { HiArrowRight, HiCalendar, HiUser } from 'react-icons/hi';
 
 const blogPosts = [
   {
     id: 1,
-    title: 'How AI is Transforming Agriculture in 2024',
-    category: 'AI & Agriculture',
-    date: 'Oct 12, 2023',
-    author: 'NLR Team',
-    excerpt: 'Discover how computer vision and machine learning models are helping farmers detect crop diseases early and improve yield output.',
-    image: 'https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&q=80&w=800'
+    title: 'We Built a Tomato Disease Detector That Identifies 38+ Diseases',
+    category: 'Case Study',
+    date: 'Mar 2025',
+    author: 'Nimma Lokesh Reddy',
+    excerpt:
+      'Using EfficientNet and a dataset of thousands of real field images, we shipped a mobile app that gives Indian farmers instant crop diagnosis — no internet required for inference.',
+    link: 'https://www.linkedin.com/in/nimmalokeshreddy/',
+    linkLabel: 'View on LinkedIn →',
   },
   {
     id: 2,
-    title: 'The Future of Web Development: What to Expect',
-    category: 'Web Technology',
-    date: 'Sep 28, 2023',
-    author: 'Nimma Lokesh Reddy',
-    excerpt: 'From server components to AI-assisted coding, explore the trends that are shaping the future of high-performance web applications.',
-    image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800'
+    title: 'What Is GEO and Why Your Business Needs It in 2025',
+    category: 'SEO & GEO',
+    date: 'Jan 2025',
+    author: 'NLR Team',
+    excerpt:
+      'Generative Engine Optimization makes your brand visible in AI answers — ChatGPT, Gemini, Perplexity. We break down how it works and why traditional SEO alone is no longer enough.',
+    link: '#contact',
+    linkLabel: 'Talk to us about GEO →',
   },
   {
     id: 3,
-    title: 'Why Startups Need Scalable Architecture from Day One',
+    title: 'How We Build Websites That Load in Under One Second',
     category: 'Engineering',
-    date: 'Aug 15, 2023',
+    date: 'Dec 2024',
     author: 'NLR Team',
-    excerpt: 'Learn the importance of building robust backend systems that can handle rapid growth without compromising performance or security.',
-    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800'
-  }
+    excerpt:
+      'React, Vite, edge deployment, and aggressive code-splitting — our stack choices and the real Lighthouse scores they produce for client sites.',
+    link: '#contact',
+    linkLabel: 'Start a project →',
+  },
 ];
 
 const Blog = () => {
   return (
-    <section id="blog" className="bg-bg-card py-24 relative overflow-hidden transition-colors duration-500">
-      <div className="section-container">
-        
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16">
-          <div className="max-w-2xl">
-            <motion.h2 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="heading-lg text-text-main mb-4"
-            >
-              Latest Insights & <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand to-emerald-400">News</span>
-            </motion.h2>
-            <motion.p 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-              className="text-text-muted"
-            >
-              Read our latest articles on AI, software development, and technological innovations shaping the modern world.
-            </motion.p>
-          </div>
-          <motion.a 
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            href="#blog" 
-            className="hidden md:flex items-center gap-2 text-brand hover:brightness-110 font-bold transition-all"
-          >
-            View All Posts <HiArrowRight />
-          </motion.a>
+    <section id="blog" aria-labelledby="blog-heading" className="py-[88px] border-b border-line">
+      <div className="wrap">
+        <div className="flex justify-between items-end gap-6 mb-[52px] flex-wrap">
+          <h2 id="blog-heading" className="font-display font-bold text-[clamp(1.8rem,4vw,2.6rem)] leading-[1.1]">
+            Latest insights
+          </h2>
+          <p className="font-mono text-[0.75rem] text-ink-soft max-w-[34ch] text-right max-md:text-left">
+            Real work, real lessons — from our projects.
+          </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {blogPosts.map((post, index) => (
-            <motion.article
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-px bg-line border border-line">
+          {blogPosts.map((post) => (
+            <article
               key={post.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="bg-bg-main rounded-3xl overflow-hidden border border-border-main hover:border-brand/40 group transition-all duration-500 shadow-lg"
+              className="bg-card p-[30px_28px] flex flex-col gap-3 hover:bg-card-hover transition-colors duration-150"
             >
-              <div className="relative h-48 overflow-hidden">
-                <img 
-                  src={post.image} 
-                  alt={post.title} 
-                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                />
-                <div className="absolute top-4 left-4 bg-bg-card/80 backdrop-blur-sm text-brand text-xs font-bold px-3 py-1 rounded-full border border-brand/30">
-                  {post.category}
-                </div>
+              <div className="flex items-center gap-4 font-mono text-[0.68rem] text-ink-soft tracking-[0.04em]">
+                <span>{post.date}</span>
+                <span>·</span>
+                <span>{post.author}</span>
               </div>
-              
-              <div className="p-6">
-                <div className="flex items-center gap-4 text-xs text-text-muted mb-4 font-medium transition-colors duration-300">
-                  <div className="flex items-center gap-1">
-                    <HiCalendar className="text-brand"/> {post.date}
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <HiUser className="text-brand"/> {post.author}
-                  </div>
-                </div>
-                
-                <h3 className="text-xl font-bold text-text-main mb-3 group-hover:text-brand transition-colors">
-                  {post.title}
-                </h3>
-                
-                <p className="text-text-muted text-sm leading-relaxed mb-6 transition-colors duration-300">
-                  {post.excerpt}
-                </p>
-                
-                <a href={`#blog-${post.id}`} className="inline-flex items-center gap-2 text-sm font-bold text-brand group-hover:gap-3 transition-all">
-                  Read Article <HiArrowRight />
-                </a>
-              </div>
-            </motion.article>
+              <span className="font-mono text-[0.68rem] tracking-[0.1em] uppercase text-saffron-deep">
+                {post.category}
+              </span>
+              <h3 className="font-display font-bold text-[1.15rem] leading-tight">{post.title}</h3>
+              <p className="text-ink-soft text-[0.88rem] flex-1">{post.excerpt}</p>
+              <a
+                href={post.link}
+                target={post.link.startsWith('http') ? '_blank' : undefined}
+                rel={post.link.startsWith('http') ? 'noopener noreferrer' : undefined}
+                className="font-mono text-[0.72rem] text-saffron-deep border-t border-line pt-3 hover:text-ink transition-colors no-underline"
+              >
+                {post.linkLabel}
+              </a>
+            </article>
           ))}
-        </div>
-        
-        <div className="mt-12 text-center md:hidden">
-          <a href="#blog" className="inline-flex items-center justify-center w-full px-6 py-3 rounded-xl border border-border-main text-text-main font-bold hover:bg-bg-card transition-colors">
-            View All Posts
-          </a>
         </div>
       </div>
     </section>
