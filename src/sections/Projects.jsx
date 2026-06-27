@@ -2,18 +2,84 @@ import React from 'react';
 
 const projects = [
   {
+    kind: 'SEO · GEO',
+    title: 'SEO & GEO Optimization Platform',
+    description:
+      'A dedicated tool for search engine optimization and generative engine optimization — helping brands rank on Google and get cited by AI engines like ChatGPT and Perplexity.',
+    stack: 'React · SEO · GEO · Analytics',
+    link: 'https://seogeonlr.vercel.app/',
+  },
+  {
+    kind: 'Govt App · Agriculture',
+    title: 'Kisaan Krushi',
+    description:
+      'Our government agriculture app — an AI companion for smallholder farmers in India with crop disease detection, weather updates, and farming guidance.',
+    stack: 'AI/ML · React · AgriTech',
+    link: 'https://kisaankrushinlr.vercel.app/',
+  },
+  {
+    kind: 'EdTech · Python',
+    title: 'Codingphiles',
+    description:
+      'A Python-dedicated learning website with tutorials, coding challenges, and resources for developers at every level.',
+    stack: 'Web · Python · Education',
+    link: 'https://codingphiles.in',
+  },
+  {
+    kind: 'Web App · Media',
+    title: 'Image Hub',
+    description:
+      'A clean, fast image hosting and sharing platform — upload, organize, and share images with optimized loading and gallery views.',
+    stack: 'React · Cloud Storage · CDN',
+    link: 'https://imagehub-phi.vercel.app',
+  },
+  {
+    kind: 'Tools · GEO',
+    title: 'GEO Tag',
+    description:
+      'A specialized geotagging tool for images and content — add location metadata for better local SEO and AI search visibility.',
+    stack: 'React · Geolocation · Metadata',
+    link: 'https://nlr-geotag.vercel.app',
+  },
+  {
+    kind: 'AI · Python',
+    title: 'Py-Gen — Python GPT',
+    description:
+      'An AI-powered Python code generator and assistant — write, debug, and understand Python code with generative AI.',
+    stack: 'Python · AI · GPT · React',
+    link: 'https://py-gen-one.vercel.app',
+    inProgress: true,
+  },
+  {
+    kind: 'Automation · Social',
+    title: 'Insta + Telegram Automation',
+    description:
+      'Automated DM and messaging bot for Instagram and Telegram — schedule messages, auto-reply, and manage outreach at scale.',
+    stack: 'Bot API · Automation · Node.js',
+    link: 'https://insta-auto-dm-bot-nlr.vercel.app',
+  },
+  {
+    kind: 'Web · Business',
+    title: 'Sais Creation',
+    description:
+      'A professional business website built for Sais Creation — showcasing services, portfolio, and client engagement with a modern UI.',
+    stack: 'React · Tailwind · Vercel',
+    link: 'https://sais-creation.vercel.app',
+  },
+  {
+    kind: 'Health · SaaS',
+    title: 'Curevist',
+    description:
+      'A healthcare platform connecting patients with medical professionals — appointment booking, health records, and telemedicine features.',
+    stack: 'Full-stack · Healthcare · SaaS',
+    link: 'https://curevist.in',
+  },
+  {
     kind: 'AI · Agriculture',
     title: 'Plant Disease Detection',
     description:
       'EfficientNet ensemble with a custom learnable fusion architecture, tested for cross-domain generalization on real-world field datasets.',
     stack: 'EfficientNet B0–B2 · PyTorch · PlantDoc',
-  },
-  {
-    kind: 'AI · Agriculture',
-    title: 'Kisaan Krushi',
-    description:
-      'An agricultural AI companion for smallholder farmers in India — research-backed, with a formal proposal submitted to national research funding.',
-    stack: 'AI/ML · Research · AgriTech',
   },
   {
     kind: 'Web App · Disaster Tech',
@@ -88,7 +154,7 @@ const Projects = () => {
             >
               {project.inProgress && (
                 <span className="absolute top-4 right-4 font-mono text-[0.62rem] tracking-[0.1em] uppercase bg-saffron/10 text-saffron-deep px-2 py-0.5 border border-saffron/30">
-                  In Progress
+                  Under Maintenance
                 </span>
               )}
               <span className="font-mono text-[0.68rem] tracking-[0.1em] uppercase text-saffron-deep">
@@ -96,9 +162,21 @@ const Projects = () => {
               </span>
               <h3 className="font-display font-bold text-[1.25rem]">{project.title}</h3>
               <p className="text-ink-soft text-[0.92rem] flex-1">{project.description}</p>
-              <span className="font-mono text-[0.7rem] text-ink-soft border-t border-line pt-3">
-                {project.stack}
-              </span>
+              <div className="border-t border-line pt-3 flex justify-between items-center">
+                <span className="font-mono text-[0.7rem] text-ink-soft">
+                  {project.stack}
+                </span>
+                {project.link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-mono text-[0.72rem] text-saffron-deep hover:text-ink transition-colors no-underline shrink-0 ml-4"
+                  >
+                    Visit →
+                  </a>
+                )}
+              </div>
             </article>
           ))}
         </div>
